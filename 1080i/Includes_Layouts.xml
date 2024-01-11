@@ -1420,15 +1420,6 @@
                 <font>font_main_bold</font>
                 <align>left</align>
             </control>
-            <control type="label">
-                <left>0</left>
-                <height>40</height>
-                <include condition="$PARAM[selected]">Color_SelectedText</include>
-                <label>$VAR[Label_ListEpisode]</label>
-                <textcolor>main_fg_90</textcolor>
-                <font>font_mini</font>
-                <align>right</align>
-            </control>
             <control type="textbox">
                 <left>0</left>
                 <top>45</top>
