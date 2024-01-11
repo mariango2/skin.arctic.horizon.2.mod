@@ -576,7 +576,7 @@
         <definition>
             <include content="List_Core">
                 <param name="orientation">horizontal</param>
-                <param name="controltype">fixedlist</param>
+                <param name="controltype">list</param>
                 <param name="id">$PARAM[id]</param>
                 <param name="item_w">560</param>
                 <param name="item_h">view_poster_item_h</param>
@@ -599,7 +599,7 @@
         <definition>
             <include content="List_Core">
                 <param name="orientation">horizontal</param>
-                <param name="controltype">fixedlist</param>
+                <param name="controltype">list</param>
                 <param name="id">$PARAM[id]</param>
                 <param name="item_w">320</param>
                 <param name="item_h">180</param>
@@ -623,7 +623,7 @@
         <definition>
             <include content="List_Core">
                 <param name="orientation">horizontal</param>
-                <param name="controltype">fixedlist</param>
+                <param name="controltype">list</param>
                 <param name="id">$PARAM[id]</param>
                 <param name="item_w">410</param>
                 <param name="item_h">view_poster_item_h</param>
