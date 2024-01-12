@@ -645,6 +645,14 @@
                 </include>
                 <include content="Items_QuickNav_Button">
                     <param name="itemgap" value="$PARAM[itemgap]" />
+                    <param name="icon" value="special://skin/extras/icons/stop.png" />
+                    <param name="id" value="88" />
+                    <param name="bordersize" value="6" />
+                    <param name="flipx" value="false" />
+                    <onclick>PlayerControl(Stop)</onclick>
+                </include>
+                <include content="Items_QuickNav_Button">
+                    <param name="itemgap" value="$PARAM[itemgap]" />
                     <param name="icon" value="$VAR[Image_OSD_Shuffle]" />
                     <param name="id" value="81" />
                     <param name="bordersize" value="6" />
