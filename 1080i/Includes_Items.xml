@@ -634,13 +634,14 @@
                 <top>10</top>
                 <orientation>horizontal</orientation>
                 <itemgap>$PARAM[itemgap]</itemgap>
-                <visible>!Integer.IsEqual(VideoPlayer.PlaylistLength,0) | !Integer.IsEqual(MusicPlayer.PlaylistLength,0)</visible>
+                <visible>Player.HasMedia</visible>
                 <include content="Items_QuickNav_Button">
                     <param name="itemgap" value="$PARAM[itemgap]" />
                     <param name="icon" value="special://skin/extras/icons/forward-step.png" />
                     <param name="id" value="83" />
                     <param name="bordersize" value="6" />
                     <param name="flipx" value="true" />
+                    <param name="visible" value="MusicPlayer.HasPrevious | VideoPlayer.HasPrevious" />
                     <onleft>PlayerControl(Previous)</onleft>
                 </include>
                 <include content="Items_QuickNav_Button">
@@ -657,6 +658,7 @@
                     <param name="id" value="85" />
                     <param name="bordersize" value="6" />
                     <param name="flipx" value="false" />
+                    <param name="visible" value="MusicPlayer.HasNext | VideoPlayer.HasNext" />
                     <onleft>PlayerControl(Next)</onleft>
                 </include>
                 <include content="Items_QuickNav_Button">
@@ -681,7 +683,6 @@
                     <param name="icon" value="special://skin/extras/icons/fullscreen.png" />
                     <param name="id" value="87" />
                     <param name="bordersize" value="4" />
-                    <param name="visible" value="!Integer.IsEqual(MusicPlayer.PlaylistLength,0) | !Integer.IsEqual(VideoPlayer.PlaylistLength,0)" />
                     <onclick>fullscreen</onclick>
                 </include>
 
