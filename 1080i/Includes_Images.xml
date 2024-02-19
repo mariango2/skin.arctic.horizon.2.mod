@@ -88,6 +88,10 @@
         <value condition="Window.IsVisible(script-tmdbhelper-wikipedia.xml) + !String.IsEmpty(Window(Home).Property(TMDbHelper.Wikipedia.Backdrop))">$INFO[Window(Home).Property(TMDbHelper.Wikipedia.Backdrop)]</value>
         <value condition="$EXP[Exp_IsPersonInfo] | Window.IsVisible(script-tmdbhelper-wikipedia.xml)">$VAR[Image_SimpleBackground]</value>
         <value condition="$EXP[Exp_HasBackgroundFanart] + $EXP[Exp_HasExtraFanart] + !String.IsEmpty(Control.GetLabel(99998))">$INFO[Control.GetLabel(99998)]</value>
+        <value condition="$EXP[Exp_HasBackgroundFanart] + !String.IsEmpty(ListItem.Art(fanart)) + String.IsEqual(ListItem.DBtype,season)">$INFO[ListItem.Art(fanart)]</value>
+        <value condition="$EXP[Exp_HasBackgroundFanart] + !String.IsEmpty(ListItem.Art(season.fanart))">$INFO[ListItem.Art(season.fanart)]</value>
+        <value condition="$EXP[Exp_HasBackgroundFanart] + !String.IsEmpty(ListItem(1).Art(season.fanart))">$INFO[ListItem(1).Art(season.fanart)]</value>
+        <value condition="$EXP[Exp_HasBackgroundFanart] + !String.IsEmpty(ListItem(-1).Art(season.fanart))">$INFO[ListItem(-1).Art(season.fanart)]</value>
         <value condition="$EXP[Exp_HasBackgroundFanart] + !String.IsEmpty(ListItem.Art(tvshow.fanart))">$INFO[ListItem.Art(tvshow.fanart)]</value>
         <value>$VAR[Image_SimpleBackground]</value>
     </variable>
