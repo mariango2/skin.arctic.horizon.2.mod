@@ -537,6 +537,7 @@
     </variable>
     <variable name="Image_Landscape">
         <value condition="Container.Content(images)">$INFO[ListItem.Icon]</value>
+		<value condition="String.IsEqual(ListItem.DbType,episode) + System.Setting(hideunwatchedepisodethumbs) + Integer.IsEqual(ListItem.Playcount,0) + !String.IsEmpty(Listitem.Art(season.landscape)) + !Skin.HasSetting(DisableLandscapeArt)">$INFO[ListItem.Art(season.landscape)]</value>
 		<value condition="String.IsEqual(ListItem.DbType,episode) + System.Setting(hideunwatchedepisodethumbs) + Integer.IsEqual(ListItem.Playcount,0) + !String.IsEmpty(Listitem.Art(landscape)) + !Skin.HasSetting(DisableLandscapeArt)">$INFO[ListItem.Art(landscape)]</value>
 		<value condition="String.IsEqual(ListItem.DbType,episode) + System.Setting(hideunwatchedepisodethumbs) + Integer.IsEqual(ListItem.Playcount,0) + !Integer.IsEqual(ListItem.Position, 1) + !String.IsEmpty(ListItem(Container(50).ListItem(1).Art(season.landscape)) + !Skin.HasSetting(DisableLandscapeArt)">$INFO[Container(50).ListItem(1).Art(season.landscape)]</value>
 		<value condition="String.IsEqual(ListItem.DbType,episode) + System.Setting(hideunwatchedepisodethumbs) + Integer.IsEqual(ListItem.Playcount,0) + !Integer.IsEqual(ListItem.Position, -1) + !String.IsEmpty(ListItem(Container(50).ListItem(-1).Art(seasonlandscape)) + !Skin.HasSetting(DisableLandscapeArt)">$INFO[Container(50).ListItem(-1).Art(season.landscape)]</value>
