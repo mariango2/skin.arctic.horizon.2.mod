@@ -1,4 +1,4 @@
-<addon id="skin.arctic.horizon.2.mod" name="Arctic Horizon 2 Mod" provider-name="mariango2" version="1.0.2">
+<addon id="skin.arctic.horizon.2.mod" name="Arctic Horizon 2 Mod" provider-name="mariango2" version="1.0.3">
     <requires>
         <import addon="xbmc.gui" version="5.15.0" />
         <import addon="script.skinshortcuts" version="0.4.0" />
